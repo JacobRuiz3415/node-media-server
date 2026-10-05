@@ -1,0 +1,1 @@
+console.log("Client-side JavaScript loaded successfully with application/javascript MIME type.");

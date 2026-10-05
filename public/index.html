@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Node.js Media Stream Test</title>
+</head>
+<body>
+  <h1>Node.js Media Server Running</h1>
+  <p>Verifying MIME types, streaming, and CORS headers.</p>
+
+  <h3>Audio Stream Test</h3>
+  <audio controls preload="metadata">
+    <source src="/sample.mp3" type="audio/mpeg">
+    <source src="/sample.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="/app.js"></script>
+</body>
+</html>
