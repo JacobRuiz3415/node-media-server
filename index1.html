@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Animated Puppet Media Driver</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #1e1e24;
+      color: #fff;
+      padding: 2rem;
+    }
+    #stage {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: #2b2b36;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .puppet-layer {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      transition: transform 0.05s ease;
+    }
+    #mouth {
+      font-size: 4rem;
+      position: absolute;
+      bottom: 100px;
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Character Animator Audio-Driven Stage</h1>
+
+  <div id="stage">
+    <!-- Simplified stage representation of the face rig -->
+    <div id="face" style="font-size: 8rem;">😐</div>
+  </div>
+
+  <div class="controls">
+    <!-- Audio element streaming from Node.js with crossOrigin enabled -->
+    <audio id="puppetAudio" controls crossOrigin="anonymous">
+      <source src="/dialogue.mp3" type="audio/mpeg">
+      Your browser does not support audio playback.
+    </audio>
+    <div id="status">Status: Ready to stream audio</div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
