@@ -22,6 +22,7 @@ const MIME_TYPES = {
   '.gif': 'image/gif',
   '.svg': 'image/svg+xml',
   '.mp3': 'audio/mpeg',
+  '.mp4': 'video/mp4',
   '.ogg': 'audio/ogg',
   '.wav': 'audio/wav',
   '.ico': 'image/x-icon'
