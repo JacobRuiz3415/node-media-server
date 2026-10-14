@@ -17,15 +17,19 @@ const MIME_TYPES = {
   '.js': 'application/javascript; charset=UTF-8',
   '.css': 'text/css; charset=UTF-8',
   '.json': 'application/json; charset=UTF-8',
+  //images
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.gif': 'image/gif',
+  '.ico': 'image/x-icon',
   '.svg': 'image/svg+xml',
+  //audio
   '.mp3': 'audio/mpeg',
-  '.mp4': 'video/mp4',
   '.ogg': 'audio/ogg',
   '.wav': 'audio/wav',
-  '.ico': 'image/x-icon'
+  //video
+  '.mp4': 'video/mp4',
+  '.mkv': 'video/mkv'
 };
 
 // CORS Headers Helper
