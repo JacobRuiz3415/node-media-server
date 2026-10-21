@@ -13,6 +13,12 @@
       color: #fff;
       padding: 2rem;
     }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 400px;
+    }
     video{
       width: 720px;
       height: 720px;
@@ -30,18 +36,20 @@
     Your browser does not support the audio element.
   </audio>
 
+  <div >
+    <h3>Puppet Video</h3>
+    <video controls preload="metadata">
+      <source src="Chad.mp4" type="audio/mp4">
+    </video>
   
-  <h3>Puppet Video</h3>
-  <video controls preload="metadata">
-    <source src="Chad.mp4" type="audio/mp4">
-  </video>
+    <div class="controls">
+      <h3>Puppet Audio</h3>
+      <audio controls preload="metadata">
+        <source src="take.wav" type="audio/wav">
+      </audio>
+    </div>
+  </div>
   
-
-  <h3>Puppet Audio</h3>
-  <audio controls preload="metadata">
-    <source src="take.wav" type="audio/wav">
-  </audio>
-
 
   <script src="/app.js"></script>
 </body>

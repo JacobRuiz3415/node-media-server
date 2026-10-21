@@ -1,5 +1,7 @@
-# CIS 3860 Node Media server
+# CIS 3860 Node Media Server
 - by Jacob Ruiz
+- mode for thomas muiti media class
 - node JS server
 - package json
-- MIME file type
+- MIME file types
+- pupper video from Adoobe character 
